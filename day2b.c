@@ -54,6 +54,7 @@ bool is_repeating_recursive(long test, int length) {
     sprintf(as_string, "%ld", test);
 
     if (strlen(as_string)%length!=0) {
+        printf("%d %d\n", strlen(as_string), );
         return false;
     }
     halflen = strlen(as_string)/length;
