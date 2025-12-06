@@ -11,7 +11,11 @@ void print_grid(grid thisgrid) {
     int y = 0;
     for (y=0; y < thisgrid.rows; y++) {
         for (x=0; x < thisgrid.columns; x++){
-            printf("%d", thisgrid.data[x][y]);
+            if (thisgrid.data[x][y] == 0){
+                printf(" ");
+            } else {
+                printf("%d", thisgrid.data[x][y]);
+            }
         }
         printf("\n");
     }
