@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#include "grid.h"
+#include "common.h"
 
 int cols_in_file(FILE *f);
 int rows_in_file(FILE *f);
